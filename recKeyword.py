@@ -37,6 +37,8 @@ for submission in subreddit.hot(limit=5):
 		keyHighlight = title[:title.find(keyword)] + "***" + keyword + "***" + title[title.find(keyword)+len(keyword):]
 		#print("Keyword Highlight: ", title.find(keyword))
 		print("Keyword Highlight: " + keyHighlight)
+	else:
+		print("Keyword not in the title!")
 
 	#print("Text: ", submission.selftext)
 	
